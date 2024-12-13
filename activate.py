@@ -1,6 +1,6 @@
 import webbrowser
 import time
-import random as rd
+
 import streamlit as st
 def ejecutar_sitio_web(url, intervalo):
     """
@@ -11,8 +11,8 @@ def ejecutar_sitio_web(url, intervalo):
         intervalo (int): Intervalo en segundos entre cada apertura del sitio.
     """
     try:
-        valor_aleatorio=rd.choice([1.5,2,2.5,3])
         st.header("Bot test")
+        st.write(f"Iniciando apertura del, sitio web: {url} cada {intervalo} segundos.")
         print(f"Iniciando apertura del, sitio web: {url} cada {intervalo} segundos. Presiona Ctrl+C para detener.")
         while True:
             webbrowser.open(url)
