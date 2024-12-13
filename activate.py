@@ -10,11 +10,11 @@ def ejecutar_sitio_web(url, intervalo):
         intervalo (int): Intervalo en segundos entre cada apertura del sitio.
     """
     try:
-        valor_aleatorio=rd.choice([1.5,2,2.5,3]),
-        print(f"Iniciando apertura del, sitio web: {url} cada {intervalo*valor_aleatorio} segundos. Presiona Ctrl+C para detener.")
+        v
+        print(f"Iniciando apertura del, sitio web: {url} cada {intervalo} segundos. Presiona Ctrl+C para detener.")
         while True:
             webbrowser.open(url)
-            time.sleep(intervalo*valor_aleatorio)
+            time.sleep(intervalo)
     except KeyboardInterrupt:
         print("\nEjecución detenida por el usuario.")
 
